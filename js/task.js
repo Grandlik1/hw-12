@@ -53,13 +53,9 @@
 // Task5
 let a = +prompt('a') //10
 let b = +prompt('b') //15
-let c = +prompt('c') //9 
-if ((a + b) < c ){
-    console.log('a i b > c')
-} else if ((b + c) < a ) {
-    console.log('b i c > a')
-} else if ((c + a) < b ) {
-    console.log('c i a > b')
+let c = +prompt('c') //9
+if (a + b > c && b + c > a && c + a > b  ){
+ alert('все верно')
 } else {
-    alert ('все верно')
+    alert ('введите другие числа, треугольник невозможен')
 }
